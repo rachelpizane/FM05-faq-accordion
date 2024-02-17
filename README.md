@@ -19,7 +19,7 @@ Under construction 🛠️
 
 ### 3.2 Links
 
-- Live Site URL: [GitHub Page - Stats Preview Card Component](https://rachelpizane.github.io/FM04-Stats-Preview-Card-Component/)
+- Live Site URL: [GitHub Page - FAQ accordion](https://rachelpizane.github.io/FM05-faq-accordion/)
   <br>
 
 ## 4. My process 🗺️
