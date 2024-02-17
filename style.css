@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 1px solid grey;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  display: grid;
+  place-content: center;
+  max-height: 100;
+}
+
+.main_card {
+    background-color: yellow;
+    margin: 2rem auto;
+    width: 85vw;
+    max-width: 500px;
+    padding: 1.5rem;
+}
+
+.main_header {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.main_title {
+    font-size: 2rem;
+}
+
+.card_title_img_together {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_title {
+    font-size: 1rem;
+}
