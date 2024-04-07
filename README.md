@@ -27,9 +27,15 @@ Under construction 🛠️
 ### 4.1. Built with
 
 Under construction 🛠️
+- Semantic HTML5 markup;
+- CSS custom properties;
+- Grid;
+- Flexbox;
+- Media Queries (Mobile-first).
+- Javascript
 <br>
 
 ### 4.2. What I learned
 
-Under construction 🛠️
+First time using javascript in a project. It was a simple code but I'm still training how to link with HTML and CSS.
 <br>
