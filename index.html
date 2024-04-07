@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQ accordion | Frontend Mentor</title>
+
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
 
@@ -14,71 +15,58 @@
 </head>
 
 <body>
+    <main class="main-faq">
+        <section class="main_card">
+            <header class="main_header">
+                <img src="img/icon-star.svg" alt="icon star">
+                <h1 class="main_title">Faqs</h1>
+            </header>
+    
+            <article class="card">
+                <div class="card_title_img_together" onclick="hideShowElement(1)">
+                    <h2 class="card_title">What is Frontend Mentor, and how will it help me?</h2>
+                    <img class="card_img" id="button1" src="img/icon-plus.svg" alt="icon plus">
+                </div>
 
-    <section class="main_card">
-        <header class="main_header">
-            <img src="img/icon-star.svg" alt="">
-            <h1 class="main_title">FAQs</h1>
-        </header>
+                <p class="card_resume" id="answer1">Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for all levels and ideal for portfolio building.</p>
+            </article>
+    
+            <article class="card">
+                <div class="card_title_img_together" onclick="hideShowElement(2)">
+                    <h2 class="card_title">Is Frontend Mentor free?</h2>
+                    <img class="card_img" id="button2" src="img/icon-plus.svg" alt="icon plus">
+                </div>
 
-        <article class="card">
-            <div class="card_title_img_together" onclick="hideShowElement(1)">
-                <h2 class="card_title">What is Frontend Mentor, and how will it help me?</h2>
-                <img class="card_img" id="button1" src="img/icon-plus.svg">
-            </div>
-            <p class="card_resume" id="answer1">Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for all levels and ideal for portfolio building.
-            <p>
-        </article>
+                <p class="card_resume" id="answer2">Yes, Frontend Mentor offers both free and premium coding challenges, with the free
+                    option providing access to a range of projects suitable for all skill levels.
+                </p>
+            </article>
+    
+            <article class="card">
+                <div class="card_title_img_together" onclick="hideShowElement(3)">
+                    <h2 class="card_title">Can I use Frontend Mentor projects in my portfolio?</h2>
+                    <img class="card_img" id="button3" src="img/icon-plus.svg" alt="icon plus">
+                </div>
 
-        <article class="card">
-            <div class="card_title_img_together" onclick="hideShowElement(2)">
-                <h2 class="card_title">Is Frontend Mentor free?</h2>
-                <img class="card_img" id="button2" src="img/icon-plus.svg">
-            </div>
-            <p class="card_resume" id="answer2">Yes, Frontend Mentor offers both free and premium coding challenges, with the free
-                option providing access to a range of projects suitable for all skill levels.
-            <p>
-        </article>
-
-        <article class="card">
-            <div class="card_title_img_together" onclick="hideShowElement(3)">
-                <h2 class="card_title">Can I use Frontend Mentor projects in my portfolio?</h2>
-                <img class="card_img" id="button3" src="img/icon-plus.svg">
-            </div>
-            <p class="card_resume" id="answer3">Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
-                way to showcase your skills to potential employers!
-            <p>
-        </article>
-
-        <article class="card">
-            <div class="card_title_img_together" onclick="hideShowElement(4)">
-                <h2 class="card_title">How can I get help if I'm stuck on a challenge?</h2>
-                <img class="card_img" id="button4" src="img/icon-plus.svg">
-            </div>
-            <p class="card_resume" id="answer4">The best place to get help is inside Frontend Mentor's Discord community. There's a help channel where you can ask questions and seek support from other community members.
-            <p>
-        </article>
-    </section>
-
+                <p class="card_resume" id="answer3">Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent way to showcase your skills to potential employers!</p>
+            </article>
+    
+            <article class="card">
+                <div class="card_title_img_together" onclick="hideShowElement(4)">
+                    <h2 class="card_title">How can I get help if I'm stuck on a challenge?</h2>
+                    <img class="card_img" id="button4" src="img/icon-plus.svg" alt="icon plus">
+                </div>
+                
+                <p class="card_resume" id="answer4">The best place to get help is inside Frontend Mentor's Discord community. There's a help channel where you can ask questions and seek support from other community members.</p>
+            </article>
+        </section>
+    </main>
+   
     <footer class="attribution" aria-label="footer">
         <p>Challenge by <a href="https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/rachelpizane" target="_blank">Rachel Pizane</a>.</p>
     </footer>
 
-
-    <script>
-        function hideShowElement(questionNumber) {
-            let answer = document.getElementById("answer" + questionNumber);
-            let button = document.getElementById("button" + questionNumber)
-
-            if (answer.style.display === "block") {
-                answer.style.display = "none";
-                button.src = "img/icon-plus.svg"
-            } else {
-                answer.style.display = "block";
-                button.src = "img/icon-minus.svg";
-            }
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>

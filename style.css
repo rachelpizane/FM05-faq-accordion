@@ -1,21 +1,25 @@
 * {
   margin: 0;
   padding: 0;
-  /* border: 1px solid grey; */
   box-sizing: border-box;
 }
 
 body {
   font-family: "Work Sans", sans-serif;
   display: grid;
-  min-height: 100vh;
-  grid-template-rows: 1fr 2rem;
-  place-content: center;
+  height: 100vh;
+  grid-template-rows: 1fr auto;
+  justify-items: center;
   color: #8c6991;
   background-image: url("img/background-pattern-mobile.svg");
   background-repeat: repeat-x;
-  background-position: top;
+  background-position: left top;
   background-color: #f9eeff;
+  background-size: contain;
+}
+
+main {
+    place-self: center;
 }
 
 .main_title, .card_title {
@@ -25,18 +29,20 @@ body {
 .main_card {
     background-color: white;
     margin: 2rem 1.5rem;
-    max-width: 500px;
     padding: 1.5rem;
-    border-radius: .45rem;
+    border-radius: .5rem;
+    height: fit-content;
 }
 
 .main_header {
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .main_title {
     font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .card {
@@ -47,6 +53,7 @@ body {
 .card_title_img_together {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 1.5rem;
     padding: 1rem 0;
     cursor: pointer;
@@ -73,23 +80,29 @@ body {
 .attribution {
     font-size: .75rem;
     place-self: center;
+    text-align: center;
+    padding: 1.5rem 0 1rem;
+    font-weight: bold;
 }
 
 .attribution a {
     color: #301534;
-    font-weight: bold;
+    display: inline-block;
 }
+
 .attribution a:hover {
     color: #AD28EB;
     transition: .3s;
 }
 
 
-@media  (min-width: 375px) {
+@media  (min-width: 400px) {
     body {
         background-image: url("img/background-pattern-desktop.svg");
-        background-repeat: no-repeat;
-        background-position: top;
+        
     }
-    
+
+    .main_card{
+        width: 500px;
+    }
 }
