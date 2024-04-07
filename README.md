@@ -7,14 +7,16 @@ This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://w
 
 ## 2. Project status  🕜
 
-In progress 
-<br>
+ Completed 
 
 ## 3. Overview 🌎
 
 ### 3.1. Screenshot
 
-Under construction 🛠️
+<p align="center">
+<img src="img/mobile-version-project.gif">
+</p>
+
 <br>
 
 ### 3.2 Links
@@ -26,7 +28,6 @@ Under construction 🛠️
 
 ### 4.1. Built with
 
-Under construction 🛠️
 - Semantic HTML5 markup;
 - CSS custom properties;
 - Grid;
